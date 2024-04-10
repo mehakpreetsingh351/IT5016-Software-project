@@ -14,7 +14,7 @@ Reopen Ticket: Reopen a closed ticket if needed.
 ## Installation
 
 ### Software Requirements
-Python 3.x
+Python 3.11
 
 ## Installation steps
 ```
