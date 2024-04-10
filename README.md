@@ -24,11 +24,11 @@ $ python software_project.py
 ```
 
 ## Usage
-Run the script using Python.
-Follow the menu prompts to perform actions:
-Submit Ticket
-Display Tickets
-Ticket Statistics
-Resolve Ticket
-Reopen Ticket
-Exit
+* Run the script using Python.
+* Follow the menu prompts to perform actions:
+* Submit Ticket
+* Display Tickets
+* Ticket Statistics
+* Resolve Ticket
+* Reopen Ticket
+* Exit
