@@ -18,8 +18,7 @@ Python 3.11
 
 ## Installation steps
 ```
-$ git clone https://github.com/mehakpreetsingh351/IT5016-Software-project.git
-$ cd IT5016-Software-project
+$ cd to/you/folder/projet
 $ python software_project.py
 ```
 
