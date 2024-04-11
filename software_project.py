@@ -8,6 +8,12 @@ class Ticket:
         self.response = response
         self.status = status
 
+    def resolve_password_change(self):
+        if "Password change" in self.description:
+            new_password = self.staff_id[:2] + self.ticket_creator_name[:3]
+            self.response = f"New password generated: {new_password}"
+            self.status = "Closed"
+
 
 class TicketingSystem:
     def __init__(self):
@@ -18,6 +24,7 @@ class TicketingSystem:
         new_ticket_num = self.next_ticket_num
         self.next_ticket_num += 1
         ticket = Ticket(new_ticket_num, ticket_creator_name, staff_id, contact_email, description)
+        ticket.resolve_password_change()  # Check if it's a password change request
         self.tickets.append(ticket)
         print(f"Ticket ID: {ticket.ticket_num} - Ticket submitted successfully.")
 
